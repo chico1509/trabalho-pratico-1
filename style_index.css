@@ -1,0 +1,72 @@
+* {
+  box-sizing: border-box;
+}
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+body {
+  background-color: rgb(212, 212, 212);
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+p {
+  font-family: Impact;
+  font-size: 3em;
+  text-shadow: -5px 4px #bebebe;
+  text-align: center;
+  word-spacing: 10px;
+  text-indent: -15%;
+}
+
+/*Parent Container*/
+
+.content_img {
+  position: relative;
+  height: 70%;
+  float: left;
+  margin-right: 10px;
+}
+
+/* Child Text Container */
+.content_img div {
+  position: absolute;
+  bottom: 0;
+  right: 20%;
+  background: black;
+  color: white;
+  margin-bottom: 5px;
+  font-family: sans-serif;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: visibility 0s, opacity 0.5s linear;
+  transition: visibility 0s, opacity 0.5s linear;
+}
+
+/* Hover on Parent Container */
+.content_img:hover {
+  cursor: pointer;
+  scale: 110%;
+}
+
+.content_img:hover div {
+  width: 150px;
+  padding: 8px 15px;
+  visibility: visible;
+  opacity: 0.8;
+}
+
+.profile {
+  display: block;
+  margin-left: auto;
+  margin-top: 50px;
+  margin-right: auto;
+  text-align: right;
+}
