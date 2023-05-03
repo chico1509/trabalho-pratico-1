@@ -1,3 +1,78 @@
 body {
-    background-color: rgb(212, 212, 212);
+  background-color: rgb(212, 212, 212);
+  background-size: cover;
+}
+
+.hi-slide {
+  position: relative;
+  width: 754px;
+  height: 292px;
+  border-radius: 50px;
+  margin: auto;
+}
+
+.hi-slide .hi-next {
+  position: absolute;
+  top: 50%;
+  width: 40px;
+  height: 40px;
+  margin-top: -20px;
+  border-radius: 40px;
+  line-height: 40px;
+  text-align: center;
+  cursor: pointer;
+  background-color: white;
+  color: black;
+  transform-origin: all;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.hi-slide .hi-next:hover {
+  opacity: 1;
+  background-color: white;
+}
+
+.hi-slide .hi-next {
+  right: -59px;
+}
+
+.hi-slide .hi-next::before {
+  content: ">";
+}
+
+.hi-slide > ul {
+  list-style: none;
+  position: relative;
+  width: 50%;
+  height: 50%;
+  margin: 0;
+  padding: 0;
+}
+
+.hi-slide > ul > li {
+  overflow: hidden;
+  position: absolute;
+  z-index: 0;
+  left: 377px;
+  top: 147px;
+  width: 0;
+  height: 0;
+  padding: 0;
+  cursor: pointer;
+  background-color: transparent;
+}
+
+.hi-slide > ul > li > img {
+  width: 90%;
+  /*height: 100%;*/
+  margin-top: 50%;
+  background-position: center;
+}
+
+.fix{
+    position:fixed;
+    bottom:0px;
+    left: 90%;
+    margin: 2%;
 }

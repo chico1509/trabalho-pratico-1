@@ -24,3 +24,9 @@
   
   body {background-color: rgb(212, 212, 212);}
 
+  .fix{
+    position:fixed;
+    bottom:0px;
+    left: 90%;
+    margin: 2%;
+}

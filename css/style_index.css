@@ -53,7 +53,7 @@ p {
 /* Hover on Parent Container */
 .content_img:hover {
   cursor: pointer;
-  scale: 110%;
+  scale: 105%;
 }
 
 .content_img:hover div {

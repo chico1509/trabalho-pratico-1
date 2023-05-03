@@ -1,14 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Musica</title>
-    <link href="img/musica/icon.png" rel="icon">
+    <link href="img/musica/icon.png" rel="icon" />
     <link rel="stylesheet" href="css/sytle_musica.css" />
-</head>
-<body>
-    
-</body>
+  </head>
+  <body>
+    <div class="slide hi-slide">
+      <div class="hi-next"></div>
+      <ul>
+        <li><img src="img/musica/ffdp.png" alt="" /></li>
+        <li><img src="img/musica/a7x.png" alt="" /></li>
+        <li><img src="img/musica/disturbed.png" alt="" /></li>
+        <li><img src="img/musica/Slipnot.png" alt="" /></li>
+        <li><img src="img/musica/SoD.png" alt="" /></li>
+        <li><img src="img/musica//Metallica.png" alt="" /></li>
+        <li><img src="img/musica/iron_manden.png" alt="" /></li>
+      </ul>
+    </div>
+    <div class="fix">
+      <a href="index.html">
+        <img src="img/go_back.png" alt="go_back" style="width: 75%;"/>
+      </a>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="js/jquery.hislide.js"></script>
+    <script>
+      $(".slide").hiSlide();
+    </script>
+  </body>
 </html>

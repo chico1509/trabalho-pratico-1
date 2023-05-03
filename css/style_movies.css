@@ -13,7 +13,7 @@ p1 {
   }
 
   img {
-    max-width: 50%;
+
     max-height:50%;
     display: block;
     margin-left: auto;
@@ -32,3 +32,10 @@ p1 {
     padding: 5px;
   }
   body {background-color: rgb(212, 212, 212);}
+
+  .fix{
+    position:fixed;
+    bottom:0px;
+    left: 90%;
+    margin: 2%;
+}
